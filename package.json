@@ -1,4 +1,5 @@
 {
+
   "name": "47597-pink",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,21 @@
     "url": "https://github.com/htmlacademy-adaptive/47597-pink/issues"
   },
   "homepage": "https://github.com/htmlacademy-adaptive/47597-pink",
+
+  "name": "6-pink",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Личный проект «Пинк» от HTML Academy",
+  "author": "Алексей Симоненко",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/htmlacademy-adaptive/6-pink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy-adaptive/6-pink/issues"
+  },
+  "homepage": "https://github.com/htmlacademy-adaptive/6-pink",
+
   "devDependencies": {
     "editorconfig-tools": "0.1.1"
   },
