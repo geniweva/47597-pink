@@ -4,10 +4,6 @@
 * Студент: [Евгения Крупцова](https://up.htmlacademy.ru/adaptive/6/user/47597).
 * Наставник: `Евгений Болтян`.
 
-* Студент: [Алексей Симоненко](https://up.htmlacademy.ru/adaptive/6/user/6).
-* Наставник: [Алексей Малейков](https://up.htmlacademy.ru/adaptive/6/user/4839).
-
-
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
