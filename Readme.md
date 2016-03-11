@@ -1,8 +1,16 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+
 * Студент: [Евгения Крупцова](https://up.htmlacademy.ru/adaptive/6/user/47597).
 * Наставник: `Евгений Болтян`.
 
+<<<<<<< HEAD
+=======
+<!--* Студент: [Алексей Симоненко](https://up.htmlacademy.ru/adaptive/6/user/6).
+* Наставник: [Алексей Малейков](https://up.htmlacademy.ru/adaptive/6/user/4839).-->
+
+
+>>>>>>> 2e279b02b656f042e32cabe099bf15667e94eb43
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
@@ -42,7 +50,14 @@ _`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
+
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/47597-pink.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/47597-pink
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/47597-pink.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/47597-pink
+
+[travis-image]: https://travis-ci.org/htmlacademy-adaptive/6-pink.svg?branch=master
+[travis-url]: https://travis-ci.org/htmlacademy-adaptive/6-pink
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/6-pink.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/6-pink
+
