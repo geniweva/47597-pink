@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк - form-mobile</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-  </head>
-  <body>
-    <div class="page-wrapper"> <!--общая обертка-->
-      <div class="layout-positioner"> <!--центровщик-->
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк - form-mobile</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="page-wrapper"> <!--общая обертка-->
+  <div class="layout-positioner"> <!--центровщик-->
 
-   <div class="page-header-form"><!--header-->
-      <div class="page-header-nav">
-          <img class="page-header__logo"src="http://placehold.it/80x30" alt="PINK">
-          <nav class="main-nav">
+    <div class="page-header-form"><!--header-->
+    <div class="page-header-nav">
+      <img class="page-header__logo"src="http://placehold.it/80x30" alt="PINK">
+        <nav class="main-nav">
            <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
            <div class="main-nav__wrapper main-nav__wrapper--closed">
               <ul class="main-nav__items">
@@ -22,95 +22,93 @@
                 <li class="main-nav__item"><a href="*">Стоимость</a></li>
               </ul>
            </div>
-          </nav>
-        </div>
-        <div class="preview__form">
-          <p class="preview__text">Конкурс на самое бесбашенное путешествие с Пинк</p>
-        </div>
+        </nav>
+    </div>
+    <div class="preview__form">
+      <p class="preview__text">Конкурс на самое бесбашенное путешествие с Пинк</p>
+    </div>
     </div><!--конец header-->
 
+    <form action="" method="" class="my-history">
+       <fieldset class="field-1" style="border:0">
+          <p class="my-history__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
-        <form action="" method="" class="my-history">
-           <fieldset class="field-1" style="border:0">
-              <p class="my-history__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <label for="my-name" class="my-history__field">Имя:*</label><br />
+          <input type="text" id="my-name" placeholder="Введите Ваше имя" required><br />
 
-              <label for="my-name" class="my-history__field">Имя:*</label><br />
-              <input type="text" id="my-name" placeholder="Введите Ваше имя" required><br />
+          <label for="last-Name" class="my-history__field">Фамилия:*</label><br />
+          <input type="text" id="last-Name" placeholder="Укажите фамилию" required><br />
 
-              <label for="last-Name" class="my-history__field">Фамилия:*</label><br />
-              <input type="text" id="last-Name" placeholder="Укажите фамилию" required><br />
+          <label for="second-name" class="my-history__field">Отчество:</label><br />
+          <input type="text" id="second-name" placeholder="Ну и отчество тоже"><br />
+      </fieldset>
 
-              <label for="second-name" class="my-history__field">Отчество:</label><br />
-              <input type="text" id="second-name" placeholder="Ну и отчество тоже"><br />
-          </fieldset>
+      <fieldset class="field-1" style="border:0">
+        <p class="my-history__field">Ваши безбашенные достижения в путешествии</p>
 
-          <fieldset class="field-1" style="border:0">
-            <p class="my-history__field">Ваши безбашенные достижения в путешествии</p>
+        <input type="checkbox" id="field-1" checked>
+        <label for="field-1" class="my-travel__field">Сделал селфи с акулой</label><br />
 
-            <input type="checkbox" id="field-1" checked>
-            <label for="field-1" class="my-travel__field">Сделал селфи с акулой</label><br />
+        <input type="checkbox" id="field-2" checked>
+        <label for="field-2" class="my-travel__field">Обгорел на пляже</label><br />
 
-            <input type="checkbox" id="field-2" checked>
-            <label for="field-2" class="my-travel__field">Обгорел на пляже</label><br />
+        <input type="checkbox" id="field-3">
+        <label for="field-3" class="my-travel__field">Видел Чака Норриса</label><br />
 
-            <input type="checkbox" id="field-3">
-            <label for="field-3" class="my-travel__field">Видел Чака Норриса</label><br />
+        <input type="checkbox" id="field-4">
+        <label for="field-4" class="my-travel__field">Накупил сувениров</label><br />
 
-            <input type="checkbox" id="field-4">
-            <label for="field-4" class="my-travel__field">Накупил сувениров</label><br />
+        <input type="checkbox" id="field-5">
+        <label for="field-5" class="my-travel__field">Удержал башню</label><br />
 
-            <input type="checkbox" id="field-5">
-            <label for="field-5" class="my-travel__field">Удержал башню</label><br />
+        <input type="checkbox" id="field-6">
+        <label for="field-6" class="my-travel__field">Разгромил отель</label><br />
+      </fieldset>
 
-            <input type="checkbox" id="field-6">
-            <label for="field-6" class="my-travel__field">Разгромил отель</label><br />
-          </fieldset>
+      <fieldset class="field-1" style="border:0">
+        <p class="my-history__field">Номерок телефончика</p>
+        <input type="text" placeholder="Номер, пожалуйста">
 
-          <fieldset class="field-1" style="border:0">
-            <p class="my-history__field">Номерок телефончика</p>
-            <input type="text" placeholder="Номер, пожалуйста">
+        <p class="my-history__field">Адресок почты:*</p>
+        <input type="email" placeholder="email, пожалуйста" pattern="[0-9]{3}-[0-9]{5}" required>
+      </fieldset>
 
-            <p class="my-history__field">Адресок почты:*</p>
-            <input type="email" placeholder="email, пожалуйста" pattern="[0-9]{3}-[0-9]{5}" required>
-          </fieldset>
+      <fieldset class="field-1" style="border:0">
+        <p class="my-history__field">C каким приложением путешествовали?</p>
 
-          <fieldset class="field-1" style="border:0">
-            <p class="my-history__field">C каким приложением путешествовали?</p>
+        <input type="radio" id="field-7">
+        <label for="field-7" class="my-travel__field">Pink для iOS</label><br />
 
-            <input type="radio" id="field-7">
-            <label for="field-7" class="my-travel__field">Pink для iOS</label><br />
+        <input type="radio" id="field-8">
+        <label for="field-8" class="my-travel__field">Pink на Android</label><br />
 
-            <input type="radio" id="field-8">
-            <label for="field-8" class="my-travel__field">Pink на Android</label><br />
+        <input type="radio" id="field-9">
+        <label for="field-9" class="my-travel__field">Windows Phone</label><br />
+      </fieldset>
 
-            <input type="radio" id="field-9">
-            <label for="field-9" class="my-travel__field">Windows Phone</label><br />
-          </fieldset>
+      <fieldset class="field-1" style="border:0">
+        <p class="my-history__field">Опишите свои эмоции</p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
 
-          <fieldset class="field-1" style="border:0">
-            <p class="my-history__field">Опишите свои эмоции</p>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
+      <button type="submit">Отправить форму</button>
+      <p class="my-travel__field"><span>*</span>-обязательные поля</p>
+    </form>
 
-          <button type="submit">Отправить форму</button>
-          <p class="my-travel__field"><span>*</span>-обязательные поля</p>
-        </form>
+    <footer class="footer-form">
+      <div class="footer-form__logo"><img src="http://placehold.it/150x50" alt=""></div>
+      <ul class="footer-form__social">
+        <li class="social__item"><a href="*"><img src="http://placehold.it/55x55" alt="social-1"></a></li>
+        <li class="social__item"><a href="*"><img src="http://placehold.it/55x55" alt="social-2"></a></li>
+        <li class="social__item"><a href="*"><img src="http://placehold.it/55x55" alt="social-3"></a></li>
+      </ul>
+      <div class="my-travel__field">
+        <p>Разработано</p>
+        <img src="http://placehold.it/30x35" alt="картинка">
+      </div>
+    </footer>
+  </div><!--конец центровщика-->
+</div><!--конец общей обертки-->
 
-        <footer class="footer-form">
-          <div class="footer-form__logo"><img src="http://placehold.it/150x50" alt=""></div>
-          <ul class="footer-form__social">
-            <li class="social__item"><a href="*"><img src="http://placehold.it/55x55" alt="social-1"></a></li>
-            <li class="social__item"><a href="*"><img src="http://placehold.it/55x55" alt="social-2"></a></li>
-            <li class="social__item"><a href="*"><img src="http://placehold.it/55x55" alt="social-3"></a></li>
-          </ul>
-          <div class="my-travel__field">
-            <p>Разработано</p>
-            <img src="http://placehold.it/30x35" alt="картинка">
-          </div>
-        </footer>
-      </div><!--конец центровщика-->
-    </div><!--конец общей обертки-->
-
-
-  </body>
+</body>
 </html>
