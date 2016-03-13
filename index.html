@@ -8,39 +8,51 @@
 <body>
   <div class="page-wrapper"> <!--общая обертка-->
     <div class="layout-positioner"> <!--центровщик-->
-
-<div class="page-header"><!--header-->
- <div class="page-header-nav">
-    <img class="page-header__logo"src="http://placehold.it/80x30" alt="PINK">
+  <div class="page-header clearfix">
+   <div class="page-header-nav">
+      <img class="page-header-nav__logo"src="http://placehold.it/80x30" alt="PINK">
+      <img class="page-header-nav__menu--open" src="http://placehold.it/50x30" alt="PINK">
     <nav class="main-nav">
-     <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
-     <div class="main-nav__wrapper main-nav__wrapper--closed">
-        <ul class="main-nav__items">
-          <li class="main-nav__item main-nav__item--active"><a href="*">Информация</a></li>
-          <li class="main-nav__item"><a href="*">Возможности</a></li>
-          <li class="main-nav__item"><a href="*">Отзывы</a></li>
-          <li class="main-nav__item"><a href="*">Стоимость</a></li>
-        </ul>
-     </div>
-    </nav>
-  </div>
-  <div class="preview">
-      <h2 class="preview__title">Взгляните на жизнь иначе!</h2>
-      <img class="preview__iphone" src="img/iphone-hand-mobile.png" alt="картинка">
- </div>
-</div><!--конец header-->
+     <ul class="main-nav__items">
+       <li class="main-nav__item main-nav__item--active"><a href="">Главная</a></li>
+       <li class="main-nav__item"><a href="">Фотографии</a></li>
+       <li class="main-nav__item"><a href="">Конкурс</a></li>
+       <li class="main-nav__item"><a href="">HTML Academy</a></li>
+     </ul>
+   </nav>
 
-<div class="main-social"><!--общий блок с блоками кнопок соцсетей, кнопки скачать-->
-  <button class="main-social__btn"><a href="*">Скачать приложение</a></button>
-  <ul class="main-social__items">
-    <li class="social__item social__item--apple"><a href="*"><img src="http://placehold.it/50x65" alt="social-apple"></a></li>
-    <li class="social__item social__item--android"><a href="*"><img src="http://placehold.it/50x65" alt="social-android"></a></li>
-    <li class="social__item social__item--microsoft"><a href="*"><img src="http://placehold.it/50x65" alt="social-microsoft"></a></li>
-  </ul>
-  <p class="main-social__text">
-    Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-  </p>
-</div><!--конец общего блока с блоками кнопок соцсетей, кнопки скачать-->
+   <nav class="main-nav-modal">
+     <ul class="main-nav-modal__items">
+      <li class="main-nav-modal__item--logo">
+            <img class="page-header-nav__logo"src="http://placehold.it/80x30" alt="PINK">
+            <img class="main-nav-modal__menu-clouse" src="http://placehold.it/50x30" alt="PINK">
+       </li>
+       <li class="main-nav-modal__item main-nav-modal__item--active"><a href="">Главная</a></li>
+       <li class="main-nav-modal__item"><a href="">Фотографии</a></li>
+       <li class="main-nav-modal__item"><a href="">Конкурс</a></li>
+       <li class="main-nav-modal__item"><a href="">HTML Academy</a></li>
+     </ul>
+   </nav>
+   </div>
+   <div class="preview">
+<!--      <h2 class="preview__title">Взгляните на жизнь иначе!</h2>-->
+      <img class="preview__iphone" src="img/iphone-hand-mobile.png" alt="картинка">
+   </div>
+
+   <div class="main-social"><!--общий блок с блоками кнопок соцсетей, кнопки скачать-->
+    <h2 class="main-social__title">Взгляните на жизнь иначе!</h2>
+    <button class="main-social__btn"><a href="*">Скачать приложение</a></button>
+      <ul class="main-social__items clearfix">
+        <li class="social__item social__item--apple"><a href="*"><img src="http://placehold.it/50x65" alt="social-apple"></a></li>
+        <li class="social__item social__item--android"><a href="*"><img src="http://placehold.it/50x65" alt="social-android"></a></li>
+        <li class="social__item social__item--microsoft"><a href="*"><img src="http://placehold.it/50x65" alt="social-microsoft"></a></li>
+      </ul>
+    <p class="main-social__text">
+      Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+    </p>
+  </div><!--конец общего блока с блоками кнопок соцсетей, кнопки скачать-->
+
+</div>
 
 <div class="info-text">
   <p class="info-text__text">Устали от серости мегаполиса?</p>
@@ -54,7 +66,7 @@
   <h3 class="info-text__title">Заводит новых друзей</h3>
   <p class="info-text__item">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
 
-  <img src="img/iphone-screen-mobile.png" alt="Изображение телефона">
+  <img class="info-text__image" src="img/iphone-screen-mobile.png" alt="Изображение телефона">
 </div>
 
 <div class="comment">
@@ -111,7 +123,6 @@
 </div>
   </div><!--конец центровщика-->
 </div><!--конец общей обертки-->
-
 
 </body>
 </html>

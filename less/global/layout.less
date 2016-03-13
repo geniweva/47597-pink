@@ -1,9 +1,41 @@
-.page-wrapper {
-  width:100%; height:auto;
-  margin-top:1px;
+@bg-total:red;
+@mobile-width-only:~"(max-width:700px)";
+@tablet-width:~"(min-width:700px)";
+@desktop-width:~"(min-width:1200px)";
+
+.clearfix{
+  &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
 }
-.layout-positioner {
+
+.layout-positioner{
   width:320px;
   margin:0 auto;
-  outline:1px solid green;
+
+  @media @tablet-width{
+    width:700px;
+    margin:0 auto;
+  }
+
+  @media @desktop-width{
+    width:1200px;
+    margin:0 auto;
+  }
+}
+
+body{
+  background-color: aquamarine;
+}
+@media @tablet-width{
+  body{
+    background-color:blue;
+  }
+}
+@media @desktop-width{
+  body{
+    background-color:yellow;
+  }
 }
