@@ -1,43 +1,44 @@
-@bg-total:red;
 @mobile-width-only:~"(max-width:700px)";
 @tablet-width:~"(min-width:700px)";
 @desktop-width:~"(min-width:1200px)";
 
 .clearfix{
-  &:after{
+  &::after{
     content:"";
     display:table;
     clear:both;
   }
 }
-
 .layout-positioner{
   width:320px;
-  margin:0 auto;
+  outline:5px solid #fff;
+  width:100%;
 
   @media @tablet-width{
-    width:700px;
+    width:620px;
     margin:0 auto;
-    outline:5px solid black;
+    outline:5px solid #fff;
   }
 
   @media @desktop-width{
-    width:1200px;
+    width:940px;
     margin:0 auto;
-    outline:5px solid black;
+    outline:5px solid #fff;
   }
 }
 
-body{
-  background-color: aquamarine;
+@media @mobile-width-only{
+  body{
+    background-color: grey;
+  }
 }
 @media @tablet-width{
   body{
-    background-color:blue;
+    background-color: brown;
   }
 }
 @media @desktop-width{
   body{
-    background-color:yellow;
+    background-color: greenyellow;
   }
 }
