@@ -10,18 +10,24 @@
   }
   .main-nav{
     display:block;
-    width:620px;
-    outline:2px solid #fff;
+    width:625px;
     float:right;
     &__item{
       float:left;
-      padding:0 50px 0 0;
+      margin-right:70px;
+    }
+    &__item:last-child{
+      margin-right:0;
     }
     &__item a{
       color:#fff;
       font-size:18px;
       font-family:Open Sans,sans-serif;
       font-weight: bold;
+    }
+    &__item a:hover{
+      opacity:0.5;
+      text-decoration: underline;
     }
   }
 

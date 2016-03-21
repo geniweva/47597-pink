@@ -26,7 +26,20 @@
     outline:5px solid #fff;
   }
 }
+//Переход к резине
+.layout-fluid{
+  width:auto;
+  outline:1px solid yellow;
 
+  @media @tablet-width{
+    min-width:620px;
+    margin:0 auto;
+    width:89%;
+    outline:1px solid yellow;
+  }
+}
+
+//фон для body
 @media @mobile-width-only{
   body{
     background-color: grey;
