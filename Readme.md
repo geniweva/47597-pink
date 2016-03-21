@@ -6,8 +6,8 @@
 
 <<<<<<< HEAD
 =======
-<!--* Студент: [Алексей Симоненко](https://up.htmlacademy.ru/adaptive/6/user/6).
-* Наставник: [Алексей Малейков](https://up.htmlacademy.ru/adaptive/6/user/4839).-->
+* Студент: [Алексей Симоненко](https://up.htmlacademy.ru/adaptive/6/user/6).
+* Наставник: [Алексей Малейков](https://up.htmlacademy.ru/adaptive/6/user/4839).
 
 
 >>>>>>> 2e279b02b656f042e32cabe099bf15667e94eb43

@@ -1,0 +1,44 @@
+@media @mobile-width-only{
+  .info-text__image-tablet{
+    display:none;
+  }
+}
+
+
+@media @tablet-width{
+  .info-text__image-tablet{
+    display:block;
+  }
+  .info-text__block--fhoto{
+    display:none;
+  }
+  .info-text__block-total{
+    .clearfix;
+    outline:1px solid green;
+  }
+  .info-text__image-tablet{
+    outline:1px solid yellow;
+    float:left;
+    width:50%;
+  }
+  .info-block__decription{
+    outline:1px solid red;
+    float:right;
+    width:50%;
+  }
+}
+
+
+
+@media @desktop-width{
+  .info-text__image-tablet{
+    display:none;
+  }
+  .info-text__block--fhoto{
+    display:block;
+}
+  .info-block__decription{
+    outline:1px solid red;
+    width:100%;
+  }
+}

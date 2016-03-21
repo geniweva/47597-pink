@@ -1,5 +1,29 @@
-.page-header-nav{
-    background:rgba(28,38,48,0.3);
-    height:80px;
+@media @desktop-width{
+  .page-header-nav{
+    .clearfix;
+    &__menu--open{
+      display:none;
+    }
+  }
+  .page-header-nav__logo{
+    float:left;
+  }
+  .main-nav{
+    display:block;
+    width:620px;
+    outline:2px solid #fff;
+    float:right;
+    &__item{
+      float:left;
+      padding:0 50px 0 0;
+    }
+    &__item a{
+      color:#fff;
+      font-size:18px;
+      font-family:Open Sans,sans-serif;
+      font-weight: bold;
+    }
+  }
+
 
 }
