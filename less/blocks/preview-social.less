@@ -22,9 +22,12 @@
     font-family:Open Sans, sans-serif;
   }
   &__main-social--items{
-    outline:5px solid red;
-    margin-bottom:25px;
+    outline:1px solid red;
     width:220px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin:50px auto;
   }
   &--text{
     font-size:14px;
@@ -35,13 +38,15 @@
 }
 
 .social__item{
-  float:left;
-  margin-right:20px;
-  outline:1px solid black;
+//  float:left;
+//  margin-right:20px;
+//  outline:1px solid black;
 }
 
 @media @mobile-width-only{
   .preview-social__main-social{
+    display:flex;
+    flex-direction:column;
     outline:2px solid red;
     background-color:#1d2631;
     &--title{
@@ -56,6 +61,13 @@
     width:40%;
     float:left;
   }
+//  .preview-social__main-social--items{
+//    display:flex;
+//    flex-direction:row;
+//    justify-content: space-around;
+//    margin:0 auto;
+//  }
+
   .bg-header-wrapper__iphone{
     outline:3px solid green;
     width:59%;
