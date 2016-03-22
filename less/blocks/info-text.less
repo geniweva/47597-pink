@@ -1,10 +1,19 @@
 
-.info-block{
-  .clearfix;
+.info-block__section{
+  margin:0 20px 0 20px;
+}
+.info-text__block--fhoto{
+  display:flex;
+  flex-direction:row;
+  margin:0 auto;
+}
+.info-text__block--fhoto>img{
+  flex-direction:row;
+  justify-content: space-around;
+  outline:1px solid blue;
 }
 .info-text{
   outline:1px solid green;
-  position:relative;
   &__text{
     text-align: center;
     font-size: 24px;
@@ -16,7 +25,6 @@
     color:#283645;
     font-family: open sans, sans-serif;
     text-align: center;
-    margin-bottom:20px;
   }
   &__item{
     font-size:14px;
@@ -24,17 +32,14 @@
     color:#283645;
     line-height: 1.7;
     text-align: center;
-    margin-bottom: 35px;
-  }
-  &__image{
-    position: relative;
-   margin:auto 70px;
+    margin-bottom: 0;
+    outline:1px solid blue;
   }
 }
 
 @media @mobile-width-only{
-  .info-text{
-    padding:0 20px 0 20px;
+  .info-text__image--desctop{
+    display:none;
   }
   .info-text__block--fhoto{
     display:none;
@@ -42,28 +47,73 @@
   .effect{
     display:none;
   }
+  .info-text__title{
+    margin:0 0 10px 0;
+    min-height:25px;
+  }
+  .info-text__image-mobile{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:45px 0 45px 0;
+  }
 }
 
 @media @tablet-width{
   .info-text__image-mobile{
     display:none;
   }
-
+  .info-text__image--desctop{
+    display:none;
+  }
+  .info-text__image-tablet{
+    margin-left:20px;
+  }
+  .info-text__block--description:first-child{
+    margin-top:70px;
+  }
+  .info-text__block--description{
+    margin-bottom:45px;
+  }
 }
+
+
+
+
 @media @desktop-width{
-  .info-block{
-    outline:1px solid yellow;
-    }
-  .info-text__block--title{
+ .info-block__section{
+  margin:0;
+}
+.info-text__block--title{
     outline:1px solid orange;
     }
-  .info-text__block--description{
-    float:left;
-    width:33%;
-    outline:1px solid yellow;
+.info-text__image--desctop{
+    display:block;
   }
-  .info-text__block--fhoto{
-    outline:1px solid yellow;
+.info-block__section{
+  display:flex;
+  flex-direction: row;
+}
+  .info-text__block--description{
+    width:20%;
+    outline:1px solid blue;
+    justify-content: space-around;
+    align-content: center;
+    margin:0 auto;
+  }
+  .info-text__image--desctop{
+    margin:15px;
+  }
+  .info-text__title{
+    margin-bottom:20px;
+     min-height:50px;
+    outline:1px solid green;
+  }
+   .info-text__block--description:first-child{
+    margin-top:0;
+  }
+  .info-text__block--description{
+    margin-bottom:0;
   }
 }
 
