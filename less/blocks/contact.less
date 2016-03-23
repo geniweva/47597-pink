@@ -1,5 +1,8 @@
 .contact{
   outline:1px solid orange;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .contact__first{
   outline:1px solid red;
@@ -29,20 +32,53 @@
   }
 }
 
+@media @mobile-width-only{
+ .contact__second--block1{
+    width:100%;
+    outline:1px solid blue;
+  }
+  .contact__second--block2{
+    width:100%;
+    outline:1px solid blue;
+  }
+  .contact__second--block3{
+    width:100%;
+    outline:1px solid blue;
+  }
+}
+
 
 @media @tablet-width{
   .contact__second{
     .clearfix;
     &--block1{
-      float:left;
-      width:50%;
     }
+  }
+  .contact__second--block1{
+    width:50%;
+    outline:1px solid blue;
+  }
+  .contact__second--block2{
+    width:50%;
+    outline:1px solid blue;
+  }
+  .contact__second--block3{
+    width:100%;
+    outline:1px solid blue;
   }
 }
 @media @desktop-width{
-  .contact__second{
-    float:left;
-    width:65%;
+  .contact__second--block1{
+    width:33%;
+    outline:1px solid blue;
+  }
+  .contact__second--block2{
+    width:33%;
+    outline:1px solid blue;
+  }
+  .contact__second--block3{
+    width:33%;
+    outline:1px solid blue;
   }
   }
 
