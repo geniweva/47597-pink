@@ -1,17 +1,37 @@
 .bg-standart{
   .clearfix;
-  background-color: #1d2631;
+   background-color:#1d2631;
   &__img{
     float:left;
   }
-}
-
-.standart{
-  outline:1px solid green;
-  &__elems{
-    outline:1px solid yellow;
+  &__info{
+    margin:0 20px 0 20px;
+    outline:1px solid blue;
   }
 }
+
+//.standart{
+//  outline:1px solid green;
+//  &__elems{
+//    outline:1px solid yellow;
+//  }
+//  &__title{
+//    font-size:18px;
+//    color:#fff;
+//    font-weight: bold;
+//    text-transform: uppercase;
+//    font-family: Open Sans,sans-serif;
+//    margin-left:110px;
+//  }
+//  &__text{
+//    font-size:24px;
+//    color:#fff;
+//    font-weight: lighter;
+//    font-family: Open Sans,sans-serif;
+//    margin-left:110px;
+//
+//  }
+//}
 .form1__elem1{
   padding:20px 0 20px 15px;
   border:1px solid #ccc;
@@ -21,6 +41,38 @@
 }
 
 
+@media @mobile-width-only{
+  .standart{
+  outline:1px solid green;
+  &__elems{
+    outline:1px solid yellow;
+  }
+  &__title{
+    font-size:18px;
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Open Sans,sans-serif;
+    margin-left:110px;
+  }
+  &__text{
+    font-size:24px;
+    color:#fff;
+    font-weight: lighter;
+    font-family: Open Sans,sans-serif;
+    margin-left:110px;
+
+  }
+}
+}
 @media @tablet-width{
+  .bg-standart{
+    display:none;
+  }
+  .standart__elems{
+  display:none;
+}
+}
+@media @desktop-width{
 
 }
