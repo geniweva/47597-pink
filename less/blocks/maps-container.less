@@ -1,0 +1,21 @@
+.maps-container{
+  position:relative;
+}
+.maps-container:before{
+  content: "";
+  display:block;
+  background-image: linear-gradient(to left top, transparent 50%, #ffffff 50%);
+  right:0;
+  height:73px;
+  width:50%;
+  position:absolute;
+}
+.maps-container:after{
+  content: "";
+  display:block;
+  background-image: linear-gradient(to right top, transparent 50%, #ffffff 50%);
+  left:0;top:0;
+  height:73px;
+  width:50%;
+  position:absolute;
+}

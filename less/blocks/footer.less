@@ -7,7 +7,9 @@
 @media @tablet-width{
   .bg-footer{
     background-color: #f1f1f1;
-    padding:0px 0 40px 0;
+    padding:40px 0 40px 0;
+    outline:2px solid blue;
+    margin-bottom:5px;
   }
   .container-footer{
     width:100%;
@@ -22,7 +24,7 @@
   }
   .footer-social__icon{
     outline: 1px solid blue;
-    width:33%;
+    width:175px;
     display:flex;
     justify-content: space-between;
   }
@@ -31,6 +33,37 @@
     width:33%;
     display:flex;
     justify-content: flex-end;
+    align-items: center;
+    &__text{
+      margin-right:15px;
+      font-size:14px;
+      color:#283645;
+    }
+  }
+  .footer-social{
+    width:45px;
+    height:45px;
+    border:3px solid #e9ebec;
+    border-radius: 50px;
+  }
+  .footer-social:hover{
+    border:3px solid black;
+    opacity:0.5;
+  }
+  .footer-social--twitter{
+    background-image: url(../img/icon-twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .footer-social--facebook{
+    background-image: url(../img/icon-facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .footer-social--youtube{
+    background-image: url(../img/icon-youtube.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
 
