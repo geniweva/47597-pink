@@ -2,8 +2,10 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-    outline:0px solid blue;
-    margin:45px 0px 0 0px;
+    outline:3px solid blue;
+    margin:45px 0px 5px 0px;
+  width:100%;
+  position:relative;
 
   &__title{
     font-size:18px;
@@ -35,13 +37,16 @@
   .slider-point{
     display:none;
   }
+  .comment__title--profy{
+    display: none;
+  }
 }
 @media @tablet-width{
   .comment__title{
-    order:1;
+    order:2;
   }
   .comment-toggle{
-    order:2;
+    order:1;
   }
   .slider-point{
     display:none;

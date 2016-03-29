@@ -1,13 +1,27 @@
 .main-nav-modal{
     display:none;
-    outline:3px solid red;
     background-color:#283645;
     width:100%;
     position:absolute;
     top:0;
+    z-index:5;
+}
+.modal-show{
+  display:block;
 }
 .main-nav-modal__menu-clouse{
   float:right;
+}
+.price__table--minus-modal{
+  border:2px solid #fff;
+  width:30px;
+  position: absolute;
+  right:10px;top:35px;
+}
+.price__table--minus-modal::after{
+  border:2px solid #fff;
+  width:28px;
+  top:-2px;
 }
 .main-nav-modal__item{
     padding:20px 0 20px 0;
@@ -17,6 +31,9 @@
     &--logo{
         border-bottom:1px solid #010101;
         padding:20px 0 20px 0;
+        display:flex;
+        justify-content: space-between;
+      position:relative;
     }
 }
 .main-nav-modal__item a{
@@ -31,8 +48,8 @@
 }
 
 @media @tablet-width{
-  .main-nav-modal{
-    .layout-positioner;
+  #Layer_1{
+    padding-left:20px;
   }
 }
 @media @desktop-width{
