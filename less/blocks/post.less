@@ -1,0 +1,75 @@
+
+.post{
+  background:#f2f2f2;
+  margin:0px 10px 15px 10px;
+  display:flex;
+  flex-direction: column;
+  margin-bottom:25px;
+  padding:0px 0 20px 0;
+  &__comment-name{
+    font-family: Open-sans,sans-serif;
+    font-size:14px;
+    color:#283645;
+    font-weight:bold;
+    padding:15px 15px 15px 15px;
+    outline:0px solid orange;
+  }
+  &__comment-time{
+    font-family: Open-sans,sans-serif;
+    font-weight:lighter;
+    font-size:12px;
+    padding:15px 15px 15px 15px;
+     outline:0px solid orange;
+  }
+  &__comment-text{
+    font-family: Open-sans,sans-serif;
+    font-size:14px;
+    color:#283645;
+    font-weight:lighter;
+    padding:0 15px;
+    line-height:1.7;
+     outline:0px solid orange;
+  }
+  &__comment-like{
+    background-image: url("../img/icon-heart.svg");
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    font-family: Open-sans,sans-serif;
+    font-size:12px;
+    color:#d22856;
+    padding:15px 15px 15px 40px;
+    text-transform: uppercase;
+    outline:0px solid orange;
+  }
+
+}
+
+
+
+@media @mobile-width-only{
+
+}
+
+
+@media @tablet-width{
+  .post{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .post__comment-name{
+    order:1;
+  }
+  .post__comment-like{
+    order:2;
+    text-align: right;
+
+  }
+  .post__comment-text{
+    order:3;
+  }
+}
+@media @desktop-width{
+
+}

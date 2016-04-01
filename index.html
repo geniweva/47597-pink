@@ -122,7 +122,7 @@
       <nav class="main-nav">
       <ul class="main-nav__items">
        <li class="main-nav__item main-nav__item--active"><a href="">Главная</a></li>
-       <li class="main-nav__item"><a href="">Фотографии</a></li>
+       <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
        <li class="main-nav__item"><a href="">Конкурс</a></li>
        <li class="main-nav__item"><a href="">HTML Academy</a></li>
       </ul>
@@ -171,7 +171,7 @@
         <div class="modal-show"></div>
     </li>
     <li class="main-nav-modal__item main-nav-modal__item--active"><a href="">Главная</a></li>
-    <li class="main-nav-modal__item"><a href="">Фотографии</a></li>
+    <li class="main-nav-modal__item"><a href="photo.html">Фотографии</a></li>
     <li class="main-nav-modal__item"><a href="">Конкурс</a></li>
     <li class="main-nav-modal__item"><a href="">HTML Academy</a></li>
     </ul>
@@ -251,44 +251,63 @@
 </div><!--конец блока bg-info-text-->
 </div><!--конец блока info-text-->
 
+<div class="bg-effect">
 <div class="layout-fluid">
   <div class="effect">
-      <div class="effect__pict">
-       <img src="img/icon-timer.svg" alt="timer">
-      </div>
+
+      <div class="effect__pict"></div>
+
       <div class="effect__text">
-        <h3>Эффект на 24 часа</h3>
-        <p>Британские ученые провели исследования и доказали,
+        <h3 class="effect__text--title">Эффект на 24 часа</h3>
+        <p class="effect__text--text">Британские ученые провели исследования и доказали,
   что положительный эффект от использования приложения длится целые сутки!</p>
-     <a href="">Узнать больше об исследовании</a>
+     <a class="effect__text--more" href="">Узнать больше об исследовании</a>
       </div>
     </div>
-
-
-
-
-<div class="comment">
-  <img src="img/icon-quotes.svg" alt="" class="slider-point">
-  <div class="slides-inner clearfix">
-      <h3 class="comment__title">Николай Петров<br /><span class="comment__title--profy">25 лет, водитель трамвая</span></h3>
-      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился             со своей будущей женой в комментариях к выложенной фотографии!»
-      </p>
-  </div>
-  <!--    <form action="" method="" class="comment-toggle">-->
-  <input class="comment-toggle__items comment-toggle__items--active" type="radio" id="slide-1">
-  <input class="comment-toggle__items" type="radio" id="slide-2">
-  <input class="comment-toggle__items" type="radio" id="slide-3">
-  <!--    </form>-->
-  <div class="slider-controls">
-  <label for="slide-1"></label>
-  <label for="slide-2"></label>
-  <label for="slide-3"></label>
-  </div>
+</div><!--конец центровщика-->
 </div>
 
 
+<div class="layout-fluid">
+<div class="slider-comment">
+  <img src="img/icon-quotes.svg" alt="" class="slider-point">
+
+   <input class="comment-toggle__items comment-toggle__items--active" type="radio" id="slide-1" name="toggle">
+    <input class="comment-toggle__items" type="radio" id="slide-2" name="toggle">
+    <input class="comment-toggle__items" type="radio" id="slide-3" name="toggle">
+  <div class="slider-controls">
+    <label for="slide-1"></label>
+    <label for="slide-2"></label>
+    <label for="slide-3"></label>
+  </div>
+  <div class="sliders-inner">
+    <div class="sliders">
+<!--    <img class="sliders--arrow-left" src="img/icon-review-arrow-left.svg" width="20" height="40" alt="">-->
+     <div class="slide">
+      <h3 class="comment__title">Николай Петров<br /><span class="comment__title--profy">25 лет, водитель трамвая</span></h3>
+      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился             со своей будущей женой в комментариях к выложенной фотографии!»
+      </p>
+    </div>
+
+    <div class="slide">
+      <h3 class="comment__title">Петр Николаев<br /><span class="comment__title--profy">35 лет, оператор </span></h3>
+      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился             со своей будущей женой в комментариях к выложенной фотографии!»
+      </p>
+    </div>
+
+    <div class="slide">
+      <h3 class="comment__title">Анжела Котова<br /><span class="comment__title--profy">29 лет, менеджер по продажам</span></h3>
+      <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился             со своей будущей женой в комментариях к выложенной фотографии!»
+      </p>
+    </div>
+<!--    <img class="sliders--arrow-right" src="img/icon-review-arrow-right.svg" width="20" height="40" alt="">-->
+</div><!--конец блока sliders-->
+  </div><!--Конец блока slider-inners-->
+
+</div>
 
 </div><!--конец центровщика-->
+
 <div class="bg-info-text">
 <div class="standart">
 <div class="bg-standart"></div>
@@ -350,10 +369,13 @@
 </div><!--конец блока standart-->
 </div>
 
-<div class="contact__first layout-fluid">
-  <p class="contact__first--questions">Остались вопросы?</p>
-  <p class="contact__first--questions">Свяжитесь с нами!</p>
+<div class="layout-fluid">
+  <div class="contact__first">
+    <p class="contact__first--questions">Остались вопросы?</p>
+    <p class="contact__first--questions">Свяжитесь с нами!</p>
+  </div>
 </div>
+
 <div class="contact layout-fluid">
 
  <div class="contact__second--block1">
