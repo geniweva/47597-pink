@@ -3,33 +3,28 @@
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    outline:0px solid orange;
   .post{
-    outline:0px solid blue;
     display:flex;
     flex-direction: column;
     align-items: center;
     width:46%;
     justify-content: flex-start;
+    position:relative;
   }
   .post__comment-name{
     order:1;
-    }
-  .post__comment-like{
-      order:3;
     }
   .post__comment-text{
       order:2;
     }
     .post__comment-total{
-      outline:0px solid green;
       width:100%;
       display:flex;
       flex-direction: column;
       align-items: flex-start;
+      height:auto;
     }
     .picture__post{
-      outline:0px solid red;
       width:100%;
     }
   }
@@ -42,7 +37,6 @@
     }
     .post__comment-name{
       width:250px;
-      outline:0px solid black;
     }
   }
 }
