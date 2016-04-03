@@ -24,16 +24,15 @@
     font-size:14px;
     color:#283645;
     font-weight:lighter;
-    padding:0 15px;
     line-height:1.7;
-    margin-bottom:25px;
+    padding:0 15px 015px;
   }
   &__comment-like{
     font-family: Open-sans,sans-serif;
     font-size:12px;
     color:#d22856;
     position: absolute;
-    bottom:0;
+    bottom:15px;
     text-transform: uppercase;
     width: 90%;
     margin-left:20px;
@@ -41,7 +40,6 @@
     background-position: right top;
     background-repeat: no-repeat;
     margin-left:15px;
-    padding-bottom:15px;
   }
   &__comment-like a {
     color:#d22856;
@@ -52,15 +50,16 @@
 }
 
 
-
 @media @mobile-width-only{
   .post{
     position: relative;
   }
+
   .post__comment-like{
     background-position: left top;
     width:200px;
     margin-left:15px;
+    bottom:5px;
   }
   .post__comment-like span {
     margin-left:20px;
@@ -74,15 +73,31 @@
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
+    position:relative;
   }
   .post__comment-name{
     order:1;
   }
   .post__comment-like{
-    order:2;
+    order:1;
   }
   .post__comment-text{
     order:3;
+  }
+  .post--first{
+    display:flex;
+    flex-direction: column;
+    .post__comment-like{
+      width:200px;
+      right:10px;
+      top:15px;
+    }
+    .post__comment-name{
+      width:200px;
+    }
+    .post__comment-like span{
+      margin-left:70px;
+    }
   }
 }
 @media @desktop-width{
