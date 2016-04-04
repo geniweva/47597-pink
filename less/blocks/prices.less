@@ -1,6 +1,6 @@
 .price__table,
 .price__table--mobile{
-  outline:1px solid blue;
+  outline:0px solid blue;
   margin:0 auto;
   width:100%;
   background-color:#fff;
@@ -22,23 +22,30 @@
   border-width: 0 0 3px 3px;
   transform:rotate(-45deg);
 }
-.price__table--minus{
+.price__table--minus,
+.price__table--minus-modal {
    width:30px;
   position:absolute;
-  border:1px solid #f25b26;
-  padding:0;
-  margin:20px 0 0 53px;
   transform: rotate(45deg);
 }
-.price__table--minus::after{
+.price__table--minus::after,
+.price__table--minus-modal::after{
   content:"";
   width:30px;
   position:absolute;
-  border:1px solid #f25b26;
-  padding:0;
   transform: rotate(90deg);
   left:-1px;
   outline:none;
+}
+
+.price__table--minus{
+  border:1px solid #f25b26;
+  padding:0;
+  margin:20px 0 0 53px;
+}
+.price__table--minus::after{
+  border:1px solid #f25b26;
+  padding:0;
 }
 .price__table--header{
   padding:30px 0px 30px 0px;

@@ -1,0 +1,31 @@
+.post-range--mobile{
+  display: flex;
+  justify-content: center;
+  padding:10px 0 35px 0;
+  border-bottom:1px solid #dddfe0;
+}
+
+::-moz-range-track {
+    width:200px;
+    border: 1px solid #283645;
+    background:#283645;
+}
+::-moz-range-thumb {
+    width:10px; height:10px;
+    border:2px solid #d22856;
+    border-radius:50%;
+}
+
+@media @tablet-width{
+  .post-range--mobile{
+    display:none;
+  }
+}
+@media @desktop-width{
+  ::-moz-range-track {
+    width:285px;
+}
+  .icon__item--tablet{
+padding: 25px 90px 25px 20px;
+  }
+}

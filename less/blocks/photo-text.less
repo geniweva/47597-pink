@@ -1,0 +1,31 @@
+.photo-text{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+  padding:55px 0 55px 0;
+  width:100%;
+  &__text{
+    width:240px;
+    color:#283645;
+    font-size:14px;
+    font-family:Open-Sans,sans-serif;
+    margin:0 auto;
+    line-height: 2;
+  }
+}
+
+@media @mobile-width-only{
+
+}
+@media @tablet-width{
+  .photo-text__text{
+    width: 445px;
+    font-size:18px;
+  }
+}
+@media @desktop-width{
+  .photo-text__text{
+    width: 570px;
+  }
+}

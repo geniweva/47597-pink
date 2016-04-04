@@ -28,36 +28,38 @@
 }
 //Переход к резине
 .layout-fluid{
-  width:auto;
-  outline:1px solid yellow;
-
+  @media @mobile-width-only{
+    width:auto;
+    height:auto;
+    outline:0px solid yellow;
+  }
   @media @tablet-width{
-    max-width:620px;
+    width:620px;
     margin:0 auto;
     width:89%;
-    outline:1px solid yellow;
+    outline:0px solid yellow;
   }
   @media @desktop-width{
-    max-width: 940px;
+    width: 940px;
     margin:0 auto;
-    width:78%;
-    outline:1px solid yellow;
+    width:82%;
+    outline:0px solid yellow;
   }
 }
 
 //фон для body
-@media @mobile-width-only{
-  body{
-    background-color: grey;
-  }
-}
-@media @tablet-width{
-  body{
-    background-color: brown;
-  }
-}
-@media @desktop-width{
-  body{
-    background-color: greenyellow;
-  }
-}
+//@media @mobile-width-only{
+//  body{
+//    background-color: grey;
+//  }
+//}
+//@media @tablet-width{
+//  body{
+//    background-color: brown;
+//  }
+//}
+//@media @desktop-width{
+//  body{
+//    background-color: greenyellow;
+//  }
+//}
