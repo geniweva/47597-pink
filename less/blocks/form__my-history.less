@@ -1,0 +1,132 @@
+.my-history{
+display:flex;
+flex-direction: column;
+}
+.my-history__text-desktop{
+display:none;
+}
+.my-history__text-descktop{
+display:none;
+}
+
+@media @mobile-width-only{
+
+}
+@media @tablet-width{
+.form__block--wrapper{
+  background-color: #fff;
+}
+.field-1:nth-child(1){
+order:-5;
+}
+.field-1:nth-child(2){
+order:-2;
+}
+.field-1:nth-child(3){
+order:-3;
+}
+.field-1:nth-child(4){
+order:-4;
+}
+.field-1:nth-child(2),
+.field-1:nth-child(3),
+.field-1:nth-child(4),
+.field-1:nth-child(5)  {
+  border:2px solid #e5e5e5;
+  border-radius:2px;
+}
+
+}
+@media @desktop-width{
+.my-history__text-desktop{
+display:block;
+color:#283645;
+font-size:18px;
+line-height: 2;
+padding:50px 0 40px 0;
+width:800px;
+font-family: Open-Sans, sans-serif;
+margin:0 auto;
+text-align: center;
+font-weight: normal;
+}
+.my-history{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__text{
+    width:100%;
+  }
+}
+
+.field-1:nth-child(3){
+  width:100%;
+  .form__field{
+    width:40%;
+    margin-bottom:0;
+    display:flex;
+    flex-direction: column;
+
+    &--contact{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .my-history__field{
+      order:2;
+    }
+    .form__phone{
+      top:20px;
+    }
+    .form__letter{
+      top:10px;
+    }
+  }
+  .form__field input{
+    margin-bottom: 15px;
+  }
+}
+.field-1:nth-child(2){
+  width:100%;
+  .block2--total{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .form__field--block2{
+    width:30%;
+    position:relative;
+    padding:20px 0;
+  }
+  .form--bird::after{
+    top:28px;
+  }
+  .form__field--block2:nth-child(1){
+    order:-6;
+  }
+  .form__field--block2:nth-child(2){
+    order:2;
+
+  } .form__field--block2:nth-child(3){
+    order:-5;
+
+  } .form__field--block2:nth-child(4){
+    order:4
+
+  } .form__field--block2:nth-child(5){
+
+  } .form__field--block2:nth-child(6){
+    order:5;
+
+  }
+}
+.field-1:nth-child(5){
+  width:100%;
+}
+.form__field--tablet{
+  width:100%;
+}
+
+}
