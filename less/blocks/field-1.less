@@ -1,9 +1,8 @@
+
 .field-1{
-  outline:1px solid blue;
   margin-bottom:40px;
 }
 .my-history__text{
-  outline:1px solid orange;
   color:#283645;
   font-size:14px;
   line-height: 2;
@@ -14,49 +13,126 @@
   text-align: center;
   font-weight: normal;
 }
+
+.form__field{
+  margin:0 15px 15px 15px;
+}
+.form__field:last-child{
+  margin-bottom:0;
+}
+
 .my-history__field{
   color:#d22856;
   font-size: #d22856;
   text-transform: uppercase;
-  outline:1px solid red;
   display:flex;
   flex-direction: column;
-  margin-left:15px;
-  margin-bottom:10px;
   padding-left:15px;
-
+  margin:0 15px 15px 0;
 }
-input[type="text"]{
+.form__field input{
   outline:none;
-  border:1px solid #e5e5e5;
-  padding:15px 15px 15px 15px;
-  margin-left:15px;
-  width:280px;
-  margin-bottom:25px;
+  border:2px solid #e5e5e5;
+  border-radius:2px;
+  padding:15px 0px 15px 15px;
+  box-sizing: border-box;
+  width:100%;
   font-size:18px;
   color:#283645;
   font-family:Open sans,sans-serif;
-
 }
 
+.form__field input:hover{
+  border:2px solid #010101;
+}
+.field-1 textarea{
+  width:100%;
+  box-sizing: border-box;
+  font-family: Open-Sans,sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+  border:2px solid #e5e5e5;
+  border-radius:2px;
+  padding:20px 20px 0 20px;
+  text-align: center;
+}
 
 
 @media @mobile-width-only{
-
+  .form__letter{
+    display:none;
+  }
+  .form__phone{
+    display:none;
+  }
 }
+
+
 @media @tablet-width{
-  .my-history__text{
-  width:500px;
-  outline:1px solid orange;
-  font-size:18px;
+  .form__total--child{
+  .form__field{
+    margin-bottom:65px;
+    display:flex;
+    align-items: center;
+    flex-direction:row;
+  }
+  }
+  .field-1:nth-child(3){
+    padding-bottom:40px;
+  }
+  .field-1:nth-child(3) .form__field{
+    position: relative;
+     .form__letter{
+      position: absolute;
+      top:20px; right:10px;
+    }
+     .form__phone{
+      position: absolute;
+      top:40px; right:25px;
+    }
+  }
+  .form__total--child{
+    display:flex;
+    flex-direction: column;
   }
   .field-1{
-
-  }
+  margin-bottom:75px;
 }
-@media @desktop-width{
+  .my-history__field{
+    margin:0 15px 0 0;
+  }
   .my-history__text{
-  width:750px;
-  outline:1px solid orange;
+  width:500px;
+  font-size:18px;
+  }
+  .form__field:last-child{
+    margin-bottom:0;
+  }
+  .form__field--tablet{
+  display:flex;
+  justify-content: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+}
+
+
+@media @desktop-width{
+  .my-history{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:20px;
+  }
+  .field-1{
+    width:45%;
+    .my-history__text{
+      display:none;
+    }
+  }
+  .field-1:nth-child(4){
+    width:50%;
   }
 }

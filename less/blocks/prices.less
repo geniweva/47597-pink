@@ -5,8 +5,24 @@
   width:100%;
   background-color:#fff;
 }
+.price__table--header-hit{
+  background-image:url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+}
+.price__table--header-hit:before{
+  content:"хит";
+  display:block;
+  position:absolute;
+  transform: rotate(-45deg);
+  top:11px;
+  margin-left:-15px;
+  margin-top:2px;
+  width:90px;
+  font-size: 14px;
+  font-weight: normal;
+
+}
 .price__table--item{
-//  outline:1px solid orange;
     padding:10px 0 10px 20px;
     position:relative;
   width:155px;
@@ -86,11 +102,6 @@
   .bg-standart__prices{
     display:none;
   }
-//  .price__table--mobile{
-//    display:none;
-//    border-collapse: collapse;
-//  }
-
 }
 
 @media @desktop-width{
