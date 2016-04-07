@@ -2,7 +2,24 @@
 
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
+  grunt.loadNpmTasks('grunt-copy');
 
+  grunt.initConfig({
+    copy:{
+      build:{
+        files:[{
+          expand:true,
+          src:[
+            "fonts/**/*.{woff,woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest:"build"
+        }]
+      }
+    }
+  });
   grunt.initConfig({
     less: {
       style: {
