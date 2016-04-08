@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "build/css/style.css": "less/style.scss"
+          "build/css/style.css": "less/style.less"
         }
       }
     },
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
           report: "gzip"
         },
         files: {
-          "build/css/style.min.css": ["build/css/style.css"]
+          "build/css/style.min.css": ["css/style.css"]
         }
       }
     },
@@ -49,19 +49,19 @@ module.exports = function(grunt) {
       },
       symbols: {
         files: {
-          "build/img/symbols.svg": ["img/.*svg"]
+          "build/img/symbols.svg": ["img/*.svg"]
         }
       }
     },
 
-    svgmin: {
-      symbols: {
-        files: [{
-          expand: true,
-          src: ["build/img/.*svg"]
-        }]
-      }
-    },
+//    svgmin: {
+//      symbols: {
+//        files: [{
+//          expand: true,
+//          src: ["build/img/*.svg"]
+//        }]
+//      }
+//    },
 
     imagemin: {
       images: {
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
         options: {spawn: false}
       },
       style: {
-        files: ["less/**/*.{scss,less}"],
+        files: ["less/**/*.{less}"],
         tasks: ["less", "postcss", "csso"],
         options: {spawn: false}
       }
@@ -112,7 +112,7 @@ module.exports = function(grunt) {
           expand: true,
           src: [
             "fonts/**/*.{woff, woff2}",
-            "img/*.{png,jpg,gif}",
+            "img/*.*",
             "js/*.js",
             "*.html"
           ],
@@ -135,7 +135,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
 
-  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+  grunt.registerTask("symbols", ["svgstore"]);
 
   grunt.registerTask("build", [
     "clean",
@@ -143,8 +143,8 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "csso",
-    "symbols",
-    "imagemin"
+    "symbols"
+//    "imagemin"
   ]);
 };
 
